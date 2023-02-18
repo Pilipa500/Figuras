@@ -2,35 +2,35 @@ package paquete;
 
 public class Rectangulo implements IFigura{
 	//
-	int lado1;
-	int lado2;
+	private int base;
+	private int altura;
 	
 	//constructor
-	public Rectangulo(int lado1, int lado2) {
+	public Rectangulo(int base, int altura) {
 		super();
-		this.lado1 = lado1;
-		this.lado2 = lado2;
+		this.base = base;
+		this.altura = altura;
 	}
 	//set y getter
 
 	public int getLado1() {
-		return lado1;
+		return base;
 	}
 
-	public void setLado1(int lado1) {
-		this.lado1 = lado1;
+	public void setLado1(int base) {
+		this.base = base;
 	}
 
-	public int getLado2() {
-		return lado2;
+	public int altura() {
+		return altura;
 	}
 
-	public void setLado2(int lado2) {
-		this.lado2 = lado2;
+	public void setAltura(int altura) {
+		this.altura = altura;
 	}
 	@Override
 	public double getArea() {
-		double getArea=lado1 * lado2;
+		double getArea=base * altura;
 		return getArea;
 	}
 	

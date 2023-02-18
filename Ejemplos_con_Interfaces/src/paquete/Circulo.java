@@ -2,7 +2,7 @@ package paquete;
 
 public class Circulo implements IFigura {
 	
-	double radio;
+	private double radio;
 	
 	
 	//constructor
